@@ -428,3 +428,16 @@ section{
     stroke: rgb(255, 77, 17);
     stroke-dashoffset: calc(502 * (1 - 0.8)); /* 8 0% */
 }
+.percentage {
+    position: absolute;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(255, 77, 17);
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}

@@ -852,3 +852,146 @@ p {
     padding: 50px 20px;
     
 }
+.main-text h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: #555557;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    padding: 15px;
+}
+
+.description h5 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.description p {
+    margin: 0 0 10px;
+}
+
+.description a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+.logo-image {
+    /* Set dimensions for the container */
+    width: 500px; /* Adjust the diameter of the circle as needed */
+    height: 500px; /* Adjust the diameter of the circle as needed */
+    overflow: hidden; /* Ensures no overflow beyond the circular shape */
+    border-radius: 50%; /* Makes the container circular */
+    display: flex; /* Center the image inside the container */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    margin-left: 20px;
+    position: relative;
+    background: #000; /* Optional: background color if needed */
+}
+
+.logo-image img {
+    width: 100%; /* Ensure the image covers the container width */
+    height: 100%; /* Ensure the image covers the container height */
+    object-fit: cover; /* Ensure the image is cropped properly without distortion */
+    border-radius: 50%; /* This is technically optional, but ensures circularity if image exceeds container */
+}
+
+.about-img {
+    /* Set dimensions for the container */
+    width: 500px; /* Adjust the diameter of the circle as needed */
+    height: 500px; /* Adjust the diameter of the circle as needed */
+    overflow: hidden; /* Ensures no overflow beyond the circular shape */
+    border-radius: 50%; /* Makes the container circular */
+    display: flex; /* Center the image inside the container */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    background: #000; /* Optional: background color if needed */
+}
+
+.about-img img {
+    /* Ensure the image covers the circular area */
+    width: 100%; /* Ensure the image covers the container width */
+    height: 100%; /* Ensure the image covers the container height */
+    object-fit: cover; /* Ensure the image is cropped properly without distortion */
+    border-radius: 50%; /* This is technically optional, but ensures circularity if image exceeds container */
+}
+#contact {
+    padding: 2rem;
+    /* background: #f9f9f9; */
+}
+
+.contact-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.contact-item {
+    width: 100px;
+    height: 100px;
+    background: #e0e0e0; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.contact-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-item i {
+    font-size: 2rem; /* Adjust size as needed */
+}
+
+.contact-item img {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.contact-item:hover {
+    background: #d0d0d0; /* Darker background on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

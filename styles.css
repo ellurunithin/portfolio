@@ -25,3 +25,158 @@ body {
     align-items: center;
     z-index: 100;
 }
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+
+
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    background-attachment: fixed;
+}
+
+.navbar a:hover {
+    color: rgb(255, 77, 17);
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    /* url(/static/images/bike.jpg) no-repeat; */
+    /* background: url("../images/coat.png") no-repeat; */
+    /* background-color: rgb(7, 17, 49); */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    flex-wrap: wrap;
+
+}
+
+.home-content {
+    flex:1;
+    max-width: 650px;
+}
+
+.logo-image {
+    flex: 1; /* Take up available space */
+    text-align: right; /* Align image to the right */
+    min-width: 300px;
+}
+
+.logo-image img {
+    /* width:100%; */
+    max-width: 700px; /* Make sure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 650px; /* Optional: Limit the height of the image */
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+
+    animation: slideBottom is ease forwards;
+    animation-delay: .7s;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+
+.home-content h3 span {
+    color: rgb(255, 77, 17)
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.home-content p {
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(255, 77, 17);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(255, 77, 17);
+    text-decoration: none;
+    transition: .5s ease;
+
+    opacity: 0;
+
+    animation: slideBottom 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+    margin: 30px 15px 30px 0;
+
+}
+
+.home-sci a:hover {
+    background: rgb(255, 77, 17);
+    color: #081b29;
+    box-shadow: 0 0 20px rgb(255, 77, 17);
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(255, 77, 17);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 0px rgb(255, 77, 17),
+        0 0 0px rgb(255, 77, 17);
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px rgb(38, 186, 186),
+        0 0 10px rgb(255, 77, 17), 0 0 10px rgb(255, 77, 17),
+        0 0 10px rgb(255, 77, 17), 0 0 10px rgb(255, 77, 17);
+}
